@@ -1,0 +1,40 @@
+\begin{fullwidth}    
+    \subsection{Given a scenario, analyze potential indicators associated with application attacks}
+    \begin{description}
+        \item[Privilege Escalation:] An attack that exploits a vulnerability that allows them to gain access to resources that they normally would be restricted from accessing.(imagine logging into a computer as a guest account and having access to admin power)
+        \item[Cross-site Scripting:]\textbf{(XXS)} It’s like sneaking a secret note into a bunch of official letters. You insert malicious scripts into websites, which then run on another user’s browser, stealing information or performing actions on their behalf without them knowing.
+        \item[Injections:] Occurs when processing invalid data, inserts code into vulnerable program and changes the course of execution.
+        \begin{itemize}
+            \item \textbf{Structured query language (SQL Injection):} Inserting SQL code into a query to manipulate a database (i.e. to view, edit, or delete data).
+            \item \textbf{Dynamic-link library(DLL Injection):} Inserting code into a running process by taking advantage of Dynamic Link Libraries used by software.
+            \item \textbf{ Lightweight Directory Access Protocol (LDAP Injection):} Manipulating Lightweight Directory Access Protocol queries (used for organizing/finding user or device data in networks).
+            \item \textbf{ Extensible Markup Language (XML Injection):} Inserting elements into an XML document to exploit the structure and logic of an application.
+        \end{itemize}
+        \item[Pointer/object dereference:] Imagine forgetting to check who’s knocking at the door and just letting them in — failing to validate who or what a pointer is pointing to can allow unauthorized access or crashes.
+        \item[Directory Traversal:] It’s like navigating through a building’s restricted areas by exploiting weak security, accessing unauthorized files/folders in a system.
+        \item[Buffer Overflows:] Imagine pouring water into a glass until it overflows, only here, excessive data overflows into other memory areas, potentially allowing malicious code execution. 
+        \item[Race Conditions \& Time of Check/Time of Use:] Two actions racing to utilize a resource and whoever wins could impact the system. If malicious action wins, it can exploit the time gap between checking a condition and using a resource.
+        \item[Error Handling:] How a system responds to unexpected inputs or conditions — poor error handling might expose sensitive information or pathways to attacks.
+        \item[Input Handling:] Not checking or sanitizing input properly could allow harmful data into a system, causing malfunctions or unauthorized activities.
+        \item[Replay Attack \& Session Replays:] Replaying is resending data (like login credentials) intercepted earlier to gain unauthorized access. Session replays involve capturing and reusing session identifiers, allowing attackers to impersonate legitimate users.
+        \item[Integer Overflow:] It’s like an odometer rolling over to zero after reaching its maximum value, only here, exceeding numerical storage capacity might cause erratic system behavior.
+        \item[Request Forgeries:] Tricking a user or system into performing actions without knowing:
+        \begin{itemize}
+            \item \textbf{Server-Side Request Forgery (SSRF):} Making a server unknowingly perform actions on behalf of an attacker.
+            \item \textbf{Cross-Site Request Forgery (CSRF):} Making a user’s browser perform an unwanted action on a site where they are authenticated.
+        \end{itemize}
+        \item[API Attacks:] Exploiting vulnerabilities in APIs — essentially, pathways that let different software components communicate — to interfere with an application’s functionality or steal data.
+        \item[Resource Exhaustion:] Draining a system’s resources (like memory or processing power) to slow it down or cause a failure, making it vulnerable to other attacks.
+        \item[Memory Leak:] Continually using up memory without releasing it back, like continually filling a basket with apples and never emptying it, which eventually causes slowdowns or crashes.
+        \item[Secure Sockets Layer (SSL) stripping:] Downgrading a secure HTTPS connection to an unsecured HTTP connection, making data transmission vulnerable to interception.
+        \item[Driver Manipulation:] 
+        \begin{itemize}
+            \item \textbf{Shimming}: Using extra code (a shim) to make a driver run in environments it’s not compatible with, potentially opening security gaps.
+            \item \textbf{Refactoring}: Changing the driver’s internal structure without altering its external behavior, potentially introducing vulnerabilities.
+        \end{itemize}
+        \item[Pass the Hash:] Using a user’s hash (a type of encrypted password) to authenticate with a service without knowing the actual password.
+        
+    \end{description}
+    
+\end{fullwidth}
+\newpage

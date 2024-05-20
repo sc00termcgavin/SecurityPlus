@@ -1,0 +1,71 @@
+\subsection{Given a scenario, analyze indicators of compromise}
+\subsubsection*{\color{red}Malware}
+\begin{fullwidth}
+    \begin{description}\itemsep2pt
+        \item[Ransomware:] Denies access to a computer system or data until a ransom is paid.
+        \item[Trojan:] A form of malware that pretends to be a harmless application.
+        \item[Worm:] A self-contained infection that can spread itself through networks, emails, and messages.
+        \item[PUP's:] Potentially Unwanted Programs software applications that may exhibit undesirable characteristics.
+        \item[Memory-resident malware:] Operates primarily in a computer's volatile memory (RAM) rather than with files
+        \item[Command and control:] (C2) Centralized server used by attackers to manager compromised devices.
+        \item[Bots:] AI inside an infected machine performs specific actions as a part of a larger entity known as a botnet.
+        \item[Cryptomalware:] A malicious program that encrypts programs and files on the computer to extort money.
+        \item[Logic Bomb:] A malicious program that lies dormant until a specific date or event occurs.
+        \item[Spyware:] Software that installs itself to spy and sends stolen info back to the host machine.
+        \item[Keyloggers:] A malicious program that saves all of the keystrokes of the infected machine.
+        \item[Remote Access Trojan] (RAT) A remotely operated Trojan.
+        \item[Rootkit:] A backdoor program that allows full remote access to a system.
+        \item[Backdoor:] Allows for full access to a system remotely.
+    \end{description}
+\end{fullwidth}
+
+\subsubsection*{\color{blue}Password Attacks}
+\begin{fullwidth}
+    \begin{description}\itemsep2pt
+        \item[Brute Force:] Systematically trying a large number of possible passwords.
+        \begin{itemize}\itemsep2pt
+            \item \textbf{Offline}: Attempting to crack a password hash without directly interacting with the target system, rather on their own independant computer.
+            \item \textbf{Online}: Attempting to guess a user's password by repeatedly trying different combinations.
+        \end{itemize}
+        \item[Sprying:] A Type of brute-force attack by attempting to authenticate with commonly used passwords. Small number of passwords against many accounts.
+        \item[Dictionary:] A password attack that creates encrypted versions of common dictionary words and then compares them against those in a stolen password file. Guessing using a list of possible passwords. 
+        \item[Rainbow Table:] Large pregenerated data sets of encrypted passwords used in password attacks.
+        \item[Plaintext/Unencrypted:] The attacker has both the plaintext and its encrypted version.
+    \end{description}
+\end{fullwidth}
+
+\subsubsection*{\color{purple}Physical attacks}
+\begin{fullwidth}
+    \begin{description}
+        \item[Malicious Flash Drive:] A storage device loaded with malware.
+        \item[Serial Bus (USB) cable:] A USB cable designed to compromise systems upon connection.
+        \item[Card cloning]: Creating a copy of a credit or other card with stolen data.
+        \item[Skimming:] Stealthily capturing and storing all the details stored on your card’s magnetic stripe.
+    \end{description}
+\end{fullwidth}
+
+\subsubsection*{\color{purple}Adversarial AI}
+\begin{fullwidth}
+    \begin{description}
+        \item[Tainted Training Data for ML:] Modifying the data used to train machine learning models to cause misclassifications or errors.
+        \item[Security of Machine Learning Algorithms:] Ensuring ML algorithms are protected against manipulation and attacks.
+    \end{description}
+\end{fullwidth}
+
+\subsubsection*{\color{purple}Other}
+\begin{fullwidth}
+    \begin{description}
+        \item[Supply-chain Attacks] Targeting less-secure elements in the supply network to compromise a primary target.
+        \item[Cloud-based vs. On-premises Attacks:] Security incidents occurring either in a cloud infrastructure or on locally hosted (on-premises) resources.
+    \end{description}
+\end{fullwidth}
+
+\subsubsection*{\color{purple}Cryptographic Attacks}
+\begin{fullwidth}
+    \begin{description}
+        \item[Birthday:] Exploiting the probability of two distinct inputs having the same output.
+        \item[Collision:] Finding two different inputs that provide the same output.
+        \item[Downgrade:] Forcing a system to fall back to a less secure version to exploit vulnerabilities.]
+    \end{description}
+\end{fullwidth}
+\newpage
